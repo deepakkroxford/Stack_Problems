@@ -5,7 +5,7 @@ public class Q1_Copy_Stack {
         /*
          * copy content of the stack in the same order
          */
-        Scanner sc = new Scanner(System.in);
+       
         Stack<Integer> stack = new Stack<>();
         // push elements to the stack user input
         // System.out.println("enter the value of n");
