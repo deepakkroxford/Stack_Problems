@@ -12,7 +12,6 @@ class BackspaceStringCompare {
             if (ch == '#' && !st.isEmpty()) {
                 st.pop();
             }
-
         }
         Stack<Character> st1 = new Stack<>();
         for (int i = 0; i < t.length(); i++) {
