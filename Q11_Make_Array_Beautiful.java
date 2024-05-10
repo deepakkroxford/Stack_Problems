@@ -2,12 +2,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Stack;
 
-class makeBeautiful {
-    public static ArrayList<Integer> makeBeautiful(int[] arr) {
+class MakeBeautiful {
+    public ArrayList<Integer> makeBeautiful(int[] arr) {
         // code here
         ArrayList<Integer> ans = new ArrayList<>();
-        if(arr.length==0)
-        {
+        if (arr.length == 0) {
             return ans;
         }
         Stack<Integer> st = new Stack<>();
@@ -74,5 +73,8 @@ public class Q11_Make_Array_Beautiful {
          * -105 <= arr[i] <= 105
          * 
          */
+        MakeBeautiful ans = new MakeBeautiful();
+        int[] arr = { 4, 2, -2, 1 };
+        System.out.println(ans.makeBeautiful(arr));
     }
 }
