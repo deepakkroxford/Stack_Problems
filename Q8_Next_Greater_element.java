@@ -1,7 +1,7 @@
 import java.util.Stack;
 
 public class Q8_Next_Greater_element {
-  public static void main(String[] args) {
+  public  void main(String[] args) {
 
     // time complexity is O(n^2), so it's not a good solution
 

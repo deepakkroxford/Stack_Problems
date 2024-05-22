@@ -63,10 +63,9 @@ public class Q14_Minimum_AddTo_makeValdi_Paranthesis {
          * 
          */
        
-        Scanner sc = new Scanner(System.in);
+         Scanner sc = new Scanner(System.in);
         System.out.println("enter the string");
         String s = sc.nextLine();
-
         Minimum_AddTo_makeValdi_Paranthesis ans = new Minimum_AddTo_makeValdi_Paranthesis();
         System.out.println(ans.minAddToMakeValid(s));
     }

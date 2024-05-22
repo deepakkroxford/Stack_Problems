@@ -1,30 +1,30 @@
 import java.util.Stack;
 class BackspaceStringCompare {
-    public static boolean backspaceCompare(String s, String t) {
+    public boolean backspaceCompare(String s, String t) {
 
-        Stack<Character> st = new Stack<>();
+        Stack<Character> st1 = new Stack<>();
 
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if (st.isEmpty() || ch != '#') {
-                st.push(ch);
-            }
-            if (ch == '#' && !st.isEmpty()) {
-                st.pop();
-            }
-        }
-        Stack<Character> st1 = new Stack<>();
-        for (int i = 0; i < t.length(); i++) {
-            char ch = t.charAt(i);
             if (st1.isEmpty() || ch != '#') {
                 st1.push(ch);
             }
             if (ch == '#' && !st1.isEmpty()) {
                 st1.pop();
             }
+        }
+        Stack<Character> st2 = new Stack<>();
+        for (int i = 0; i < t.length(); i++) {
+            char ch = t.charAt(i);
+            if (st2.isEmpty() || ch != '#') {
+                st2.push(ch);
+            }
+            if (ch == '#' && !st1.isEmpty()) {
+                st2.pop();
+            }
 
         }
-        if (st.equals(st1)) { //this equal to function is used to compare the element of the stack 
+        if (st1.equals(st2)) { //this equal to function is used to compare the element of the stack 
             return true;
         }
         return false;

@@ -2,7 +2,7 @@ import java.util.Stack;
 
 class removeConsecutiveSubSequence
 {
-    public static int[] remove (int arr[])
+    public  int[] remove (int arr[])
     {
         Stack<Integer> st = new Stack<>();
 

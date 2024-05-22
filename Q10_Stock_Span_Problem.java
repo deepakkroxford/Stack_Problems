@@ -1,6 +1,6 @@
 class stock_SpanOn2 {
     // Function to calculate the span of stockâ€™s price for all n days.
-    public static int[] calculateSpan(int price[], int n) {
+    public  int[] calculateSpan(int price[], int n) {
         // Your code here
         int res[] = new int[n];
         res[0] = 1;
