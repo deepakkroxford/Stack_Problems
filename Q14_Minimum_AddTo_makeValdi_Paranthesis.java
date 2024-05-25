@@ -24,7 +24,6 @@ class Minimum_AddTo_makeValdi_Paranthesis {
         return count + st.size();
     }
 }
-
 public class Q14_Minimum_AddTo_makeValdi_Paranthesis {
     public static void main(String[] args) {
         /*
@@ -62,8 +61,7 @@ public class Q14_Minimum_AddTo_makeValdi_Paranthesis {
          * of bracket like--> {},[],()
          * 
          */
-       
-         Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("enter the string");
         String s = sc.nextLine();
         Minimum_AddTo_makeValdi_Paranthesis ans = new Minimum_AddTo_makeValdi_Paranthesis();
