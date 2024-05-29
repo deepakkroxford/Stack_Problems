@@ -1,7 +1,7 @@
 import java.util.Stack;
 
 class removeStars {
-    public String removeStars(String s) {
+    public String removeStarsString(String s) {
         StringBuilder sb = new StringBuilder();
         Stack<Character> st = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
@@ -67,7 +67,7 @@ public class Q19_Remove_Stars_FromString {
 
          removeStars ans = new removeStars();
          String s ="leet**cod*e";
-         System.out.println(ans.removeStars(s));
+         System.out.println(ans.removeStarsString(s));
 
     }
 }
