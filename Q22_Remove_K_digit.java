@@ -90,10 +90,14 @@ public class Q22_Remove_K_digit {
          System.out.println("Output: " + ans.removeKdigits(s1, k1));
          
          // Test case 2
-         String s2 = "1002991";
-         int k2 = 3;
+         String s2 = "10200";
+         int k2 = 1;
          System.out.println("Input: S = " + s2 + ", K = " + k2);
          System.out.println("Output: " + ans.removeKdigits(s2, k2));
+         String s3 = "10";
+         int k3 = 1;
+         System.out.println("Input: S = " + s3 + ", K = " + k3);
+         System.out.println("Output: " + ans.removeKdigits(s3, k3));
 
     }
 
