@@ -37,35 +37,32 @@ class Evaluate {
     // or not
 
     // public static boolean isNumber(String s) {
-    //     try {
-    //         Integer.parseInt(s);
-    //         return true;
-    //     } catch (NumberFormatException e) {
-    //         return false;
-    //     }
+    // try {
+    // Integer.parseInt(s);
+    // return true;
+    // } catch (NumberFormatException e) {
+    // return false;
+    // }
     // }
 
-    //we can aslo use in simple way to check it is digit or not 
-    public static boolean isnumber(String s)
-    {
-        if(s.length()==1)  // so here we are checking "+" "-" beacuse these two can make number is pos or neagtive if the length is one
-        //no need to check it is not a number
+    // we can aslo use in simple way to check it is digit or not
+    public static boolean isnumber(String s) {
+        if (s.length() == 1) // so here we are checking "+" "-" beacuse these two can make number is pos or
+                             // neagtive if the length is one
+        // no need to check it is not a number
         {
-            if(s.charAt(0)=='+' || s.charAt(0)=='-')
-            {
+            if (s.charAt(0) == '+' || s.charAt(0) == '-') {
                 return false;
             }
         }
-        for(int i=0;i<s.length();i++) // here we are checking number like "-15" so if first charcter is opertor so we move and then check for
-        //next one if there is not a digit so we return false otherwise true;
+        for (int i = 0; i < s.length(); i++) // here we are checking number like "-15" so if first charcter is opertor
+                                             // so we move and then check for
+        // next one if there is not a digit so we return false otherwise true;
         {
-            char ch =s.charAt(i);
-            if(i==0 && (ch=='+' || ch=='-'))
-            {
+            char ch = s.charAt(i);
+            if (i == 0 && (ch == '+' || ch == '-')) {
                 continue;
-            }
-            else if(Character.isDigit(ch))
-            {
+            } else if (Character.isDigit(ch)) {
                 return true;
             }
         }
@@ -126,14 +123,13 @@ public class Q23_Evaluate_ReversePolishNotation {
 
         Evaluate ans = new Evaluate();
         String[] tokens1 = { "10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+" };
-        System.out.println("after evaluation the value is -->"+ans.ReversePolishNotation(tokens1));
+        System.out.println("after evaluation the value is -->" + ans.ReversePolishNotation(tokens1));
 
-        String[] tokens2={"4","13","5","/","+"};
-        System.out.println("after evaluation the value is -->"+ans.ReversePolishNotation(tokens2));
+        String[] tokens2 = { "4", "13", "5", "/", "+" };
+        System.out.println("after evaluation the value is -->" + ans.ReversePolishNotation(tokens2));
 
-        String[] tokens3={"2","1","+","3","*"};
-        System.out.println("after evaluation the value is -->"+ans.ReversePolishNotation(tokens3));
-
+        String[] tokens3 = { "2", "1", "+", "3", "*" };
+        System.out.println("after evaluation the value is -->" + ans.ReversePolishNotation(tokens3));
 
     }
 }
