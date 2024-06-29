@@ -22,7 +22,7 @@ class Stack {
             temp.next = head;
             head = temp;
         }
-        size++;
+        size++; 
     }
 
     public void pop() {
