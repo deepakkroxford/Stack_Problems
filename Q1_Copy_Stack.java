@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Stack;
 
 public class Q1_Copy_Stack {
     public static void main(String[] args) {

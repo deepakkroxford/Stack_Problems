@@ -8,7 +8,6 @@ class Node {
 
     }
 }
-
 class Stack {
     Node head = null;
     int size = 0;

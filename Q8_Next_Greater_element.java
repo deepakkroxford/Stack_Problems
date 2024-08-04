@@ -23,12 +23,12 @@ public class Q8_Next_Greater_element {
      * }
      */
        
-    Stack<Integer> stack = new Stack();
+    Stack<Integer> stack = new Stack<>();
     int arr[] = { 1, 3, 2, 1, 8, 6, 3, 4 };
     int res[] = new int[arr.length];
     res[arr.length - 1] = -1;
     stack.push(arr[arr.length - 1]);
-
+    
     for (int i = arr.length - 2; i >= 0; i--) {
 
       while (stack.size() > 0 && stack.peek() <= arr[i]) {
