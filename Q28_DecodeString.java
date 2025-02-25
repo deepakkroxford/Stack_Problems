@@ -35,7 +35,6 @@ public class Q28_DecodeString {
             else {
                 sb.append(s.charAt(i));
             }
-            
         }
         return sb.toString();
 

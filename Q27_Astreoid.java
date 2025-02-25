@@ -1,16 +1,12 @@
-
 import java.util.Arrays;
 import java.util.Stack;
-
 class Asteroids {
     public int[] collide(int arr[]) {
         Stack<Integer> st = new Stack<>();
-
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > 0) {
                 st.push(arr[i]);
             } else {
-
                 while (!st.isEmpty() && st.peek() > 0 && st.peek() < Math.abs(arr[i])) {
                     st.pop(); // Pop smaller right-moving asteroids
                 }
@@ -23,14 +19,11 @@ class Asteroids {
 
             }
         }
-
         int ans[] = new int[st.size()];
         for (int j = st.size() - 1; j >= 0; j--) {
             ans[j] = st.pop();
         }
-
         return ans;
-
     }
 }
 
